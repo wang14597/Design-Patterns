@@ -20,11 +20,6 @@ public class SingleCaseMode02 {
         return instance;
     }
 
-
-    public void TestThreadSafety() {
-
-    }
-
     public void run(){
         SingleCaseMode02 instance1 = null;
         try {
