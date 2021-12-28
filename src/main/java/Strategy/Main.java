@@ -17,10 +17,9 @@ public class Main {
     public static void main(String[] args) {
         Cat[] cats = {new Cat(5,5),new Cat(3,3),new Cat(1,1)};
         Dog[] dogs = {new Dog(2),new Dog(4), new Dog(1)};
-        Sorter<Dog> dogSorter = new Sorter<>();
-        Sorter<Cat> catSorter = new Sorter<>();
-        dogSorter.sort(dogs, new DogComparator());
-        catSorter.sort(cats, new CatComparator());
+        SortSingleCaseMode sortInstance = SortSingleCaseMode.INSTANCE;
+        sortInstance.sort(dogs, new DogComparator());
+        sortInstance.sort(cats, new CatComparator());
         System.out.println(Arrays.toString(cats));
         System.out.println(Arrays.toString(dogs));
     }
