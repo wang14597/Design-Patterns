@@ -1,5 +1,7 @@
 package SingleCaseMode;
-
+/*
+* 枚举单列 最优单列实现方式
+**/
 public enum SingleEnum {
     INSTANCE;
 
